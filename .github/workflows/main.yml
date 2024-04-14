@@ -18,6 +18,9 @@ jobs:
     permissions:
       id-token: write
       contents: read
+    defaults:
+      run:
+        working-directory: ../infra/env/develop
     steps:
       - name: Chekcout repository
         uses: actions/checkout@v3
